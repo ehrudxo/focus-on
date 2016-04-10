@@ -1,0 +1,24 @@
+{
+  "name": "focus-on",
+  "version": "1.0.0",
+  "description": "build resume using just json",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ehrudxo/focus-on.git"
+  },
+  "keywords": [
+    "resume",
+    "json",
+    "react"
+  ],
+  "author": "keen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ehrudxo/focus-on/issues"
+  },
+  "homepage": "https://github.com/ehrudxo/focus-on#readme"
+}
