@@ -9,14 +9,20 @@ module.exports = {
   ],
   devtool: 'eval-source-map',
   output: {
-    path: __dirname,
+    path: __dirname+"/app/dist/",
     filename: 'bundle.js',
     publicPath: '/dist/',
     contentBase: __dirname+ "/app/"
   },
   plugins: [
+    new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin()
+    new webpack.NoErrorsPlugin(),
+    new webpack.optimize.UglifyJsPlugin({
+     compressor: {
+       warnings: false
+     }
+   })
   ],
   resolve: {
     extensions: [ '', '.js' ]

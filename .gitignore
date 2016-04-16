@@ -4,3 +4,4 @@ build
 storage
 *.log
 .DS*
+dist*

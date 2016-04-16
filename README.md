@@ -4,7 +4,9 @@ inspired by [orbit free resume cv](http://themes.3rdwavemedia.com/website-templa
 
 I would like to make project that is just start with json scheme is like shown below
 
-personal information json is shown below
+## personal information
+
+json is shown below
 
 ```
 profile:{
@@ -31,7 +33,9 @@ languages : [{lang:"Korean",fluency:"native"},{lang:"english",fluency:"Intermedi
 interests :["Github Trend","Social Programming","Tech Blogging"]
 ```
 
-career information json is shown below
+## career information
+
+json is shown below
 
 ```
 const career={
@@ -143,4 +147,34 @@ const career={
 module.exports= career;
 
 ```
+
+
+## edit resume
+
+```
+npm start
+```
+
+check from http://localhost:3500
+
+you can edit /app/js/contents/career.js and /app/js/contents/info.js
+
+info.js - you can write your personal information
+
+career.js - you can write your career information
+
+## publish
+
+```
+npm build
+```
+
+/app/index.html file is your resume.
+
+If you want to use it just copy app folder to your projectType
+
 That's all
+
+##License
+
+MIT License

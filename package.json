@@ -4,7 +4,8 @@
   "description": "build resume using just json",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "start" : "node server",
+    "build" : "webpack webpack.config.js"
   },
   "repository": {
     "type": "git",
